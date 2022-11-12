@@ -9,10 +9,6 @@ function Header() {
   const [navMobile, setNavMobile] = useState<boolean>(false);
   const nav: NavItl[] = [
     {
-      name: '技术栈',
-      url: '/skill',
-    },
-    {
       name: '项目',
       url: '/project',
     },
@@ -25,14 +21,16 @@ function Header() {
   return (
     <>
       {/* Header */}
-      <div className="space-x-4 flex justify-between items-center h-[10vh] w-screen px-3">
+      <div className="flex bg-[#141414] fixed top-0 left-0 right-0 z-50 justify-between items-center h-[10vh] w-screen px-3">
         <div className="relative w-[50px] h-[50px]">
-          <Image
-            src="/lv.png"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-full"
-          />
+          <a href="/">
+            <Image
+              src="/lv.png"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+            />
+          </a>
         </div>
 
         <PcNav nav={nav} />

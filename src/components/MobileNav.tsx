@@ -8,8 +8,8 @@ interface Props {
 function MobileNav({ nav, navMobile }: Props) {
   return (
     <ul
-      className={`fixed top-[80px] left-0 right-0 overflow-hidden bottom-0 flex flex-col items-center transaction-all duration-200 ${
-        navMobile ? 'h-[150px]' : 'h-0'
+      className={`fixed top-[10vh] z-50  w-screen bg-[#141414] left-0 right-0 overflow-hidden bottom-0 flex flex-col items-center transaction-all duration-200 ${
+        navMobile ? 'h-[101px]' : 'h-0'
       }`}
     >
       {nav.map((item, index) => (
@@ -20,6 +20,11 @@ function MobileNav({ nav, navMobile }: Props) {
           </a>
         </li>
       ))}
+      <div
+        className={`${
+          navMobile ? 'border-b-orange-600 border-b' : 'hidden'
+        } w-screen`}
+      />
     </ul>
   );
 }

@@ -18,7 +18,7 @@ export default function Layout({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      {children}
+      <div className="mt-[10vh]">{children}</div>
     </div>
   );
 }
