@@ -6,9 +6,15 @@ function About() {
     <Layout title="yzZ">
       <main className="w-screen h-[90vh] scrollbar-hide px-5">
         <div>
-          <h1 className="pt-10 pb-3 text-3xl lg:text-5xl border-b border-b-white pb-10 mb-10">
-            关于我
-          </h1>
+          <div className="flex items-cent pt-10 border-b border-b-white pb-10 mb-10">
+            <h1 className=" text-3xl lg:text-5xl ">关于我</h1>
+            <div className="flex-1" />
+            <a href="/resume.jpeg" className="ml-5">
+              <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+                我的简历
+              </button>
+            </a>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 animate-fade-up">
             <div className="flex justify-center w-full">
               <div className="relative w-[192px] h-[192px]">
