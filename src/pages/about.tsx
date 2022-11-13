@@ -33,10 +33,10 @@ function About() {
                   skill：
                   <ul className="ml-10">
                     <li className="text-orange-600 mb-1">
-                      前端：Html, Css, Js, Ts, Dart, Flutter
+                      前端：Vue全家桶, Ts, Dart, Flutter, uni-app
                     </li>
                     <li className="text-orange-600 mb-1">
-                      服务端：Java, SpringBoot
+                      服务端：Nuxt, Next, SpringBoot
                     </li>
                     <li className="text-orange-600 mb-1">数据库：Mysql</li>
                     <li className="text-orange-600 mb-1">
