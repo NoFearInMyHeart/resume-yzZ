@@ -39,7 +39,7 @@ function About() {
                   skill：
                   <ul className="ml-10">
                     <li className="text-orange-600 mb-1">
-                      前端：Vue全家桶, Ts, Dart, Flutter, uni-app
+                      前端：React, Vue, Ts, Dart, Flutter, uni-app
                     </li>
                     <li className="text-orange-600 mb-1">
                       服务端：Nuxt, Next, SpringBoot
