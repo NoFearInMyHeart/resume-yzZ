@@ -1,11 +1,6 @@
-/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
-/* purgecss end ignore */
 @tailwind utilities;
-
-@layer base {
-    body {
-        @apply bg-[#141414] text-white text-white !scrollbar-thin !scrollbar-track-transparent;
-    }
+* {
+    scroll-behavior: smooth;
 }
