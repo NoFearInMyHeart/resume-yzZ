@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Header from '@/components/Header';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -17,8 +16,7 @@ export default function Layout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header />
-      <div className="mt-[10vh]">{children}</div>
+      <div>{children}</div>
     </div>
   );
 }

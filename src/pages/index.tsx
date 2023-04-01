@@ -1,21 +1,16 @@
 import Layout from '@/components/layout';
-import Typewriter from 'typewriter-effect';
+import Main from '@/components/Main';
+import SlideNav from '@/components/SlideNav';
+import Work from '@/components/Work';
+import Projects from '@/components/Projects';
 
 export default function IndexPage() {
   return (
     <Layout title="yzZ">
-      <main className="w-screen h-[90vh] flex flex-col scrollbar-hide">
-        {/* writer animation */}
-        <div className="flex flex-1 justify-center items-center text-[50px] lg:text-[200px]">
-          <Typewriter
-            options={{
-              strings: ['Welcome🚀'],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </div>
-      </main>
+      <SlideNav />
+      <Main />
+      <Work />
+      <Projects />
     </Layout>
   );
 }
